@@ -1,0 +1,9 @@
+.main_view {
+  color: green;
+  &.active {
+    color: red;
+  }
+}
+.active {
+  color: blue;
+}

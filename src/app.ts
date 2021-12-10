@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import { Provider } from 'react-redux'
-import store from 'src/redux'
+// import { Provider } from 'react-redux'
+// import store from 'src/redux'
 import './app.scss'
 
 class App extends Component {
@@ -19,11 +19,7 @@ class App extends Component {
 
   render () {
     // this.props.children 是将要会渲染的页面
-    return (
-      <Provider store={store}>
-        {this.props.children}
-      </Provider>
-    )
+    return this.props.children
   }
 }
 
