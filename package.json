@@ -1,5 +1,5 @@
 {
-  "name": "dtPeople",
+  "name": "dt-people",
   "version": "1.0.0",
   "private": true,
   "description": "A mini program of human resources center",
@@ -40,6 +40,7 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@reduxjs/toolkit": "^1.7.0",
     "@tarojs/components": "3.3.16",
     "@tarojs/plugin-sass": "^2.2.10",
     "@tarojs/react": "3.3.16",

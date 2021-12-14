@@ -1,10 +1,10 @@
-import { Component } from 'react'
 import { View } from '@tarojs/components'
+import { useSelector } from 'react-redux'
+import { selectName } from '@/store/features/user/userInfoSlice'
 
-export default class Index extends Component {
-  render() {
-    return (
-      <View>123</View>
-    )
-  }
+export default function () {
+  const name = useSelector(selectName)
+  return (
+    <View>{name}</View>
+  )
 }

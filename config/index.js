@@ -1,5 +1,6 @@
 const path = require('path')
 
+const resolve = dir => path.resolve(__dirname, dir)
 const config = {
   projectName: 'dtPeople',
   date: '2021-12-7',
@@ -19,11 +20,11 @@ const config = {
   defineConstants: {
   },
   alias: {
-    '@/components': path.resolve(__dirname, '..', 'src/components'),
-    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
-    '@/config': path.resolve(__dirname, '..', 'src/config'),
-    '@/api': path.resolve(__dirname, '..', 'src/api'),
-    '@/redux': path.resolve(__dirname, '..', 'src/redux')
+    '@/components': resolve('../src/components'),
+    '@/utils': resolve('../src/utils'),
+    '@/config': resolve('../src/config'),
+    '@/api': resolve('../src/api'),
+    '@/store': resolve('../src/store')
   },
   copy: {
     patterns: [
